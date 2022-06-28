@@ -16,3 +16,7 @@ DELETE /events/:id
 PUT /events (update)
 
 API = Application program interface
+
+git init
+git add .
+git commit -m "message"
