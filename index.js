@@ -1,3 +1,4 @@
+const { response } = require('express')
 const express = require('express')
 const app = express()
 const eventList = [
@@ -28,7 +29,10 @@ app.get('/events/:id', (req, res) =>{
     } res.send(event)
     res.send('get one event by ID ')
 })
-
+// Create event
+app.post('/events', (req,res) => {
+    res.send('Create events')
+})
 
 app.listen(8000, () => {
     console.log("Running app express on port : 8000")
